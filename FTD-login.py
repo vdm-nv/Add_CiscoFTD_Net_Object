@@ -6,12 +6,12 @@ options.add_argument('--ignore-ssl-errors=yes')
 options.add_argument('--ignore-certificate-errors')
 driver = webdriver.Chrome(r"C:\Users\Operator\PycharmProjects\pythonProject\drivers\chromedriver.exe", options=options)
 driver.maximize_window()
-user_name = "admin"
-password = "Ics0@dmin"
+user_name = "mylogin"
+password = "mypassword"
 #
 # Login to FTD
 #
-driver.get("https://10.121.64.180/#/login")
+driver.get("https://MY_IPADD_OF_FTD/#/login")
 driver.set_page_load_timeout(10)
 username = driver.find_element_by_id("username")
 username.send_keys(user_name)
